@@ -1,7 +1,7 @@
 import { ItemList } from './components/Eshop/ItemList';
 import { ApiContext } from './context';
 import classes from './app.module.css';
-import { useState, useEffect,useContext } from 'react';
+import React, { useState, useEffect,useContext } from 'react';
 import { AddItem } from './components/Eshop/AddItem';
 import { postItem, deleteItem } from './requests';
 import axios from 'axios';

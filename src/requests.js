@@ -40,13 +40,3 @@ export const deleteItem = async (id) => {
       throw error
     }
   }
-
-  /*
-  уровень сложности: Создать через createContext(),
-  Context.Provider и useContext() изменение цветовой темы приложения 
-  два мода light и dark 
-  изменение стилей через  
-  ${classes.item} ${classes[theme]}}>
-
-
-  */

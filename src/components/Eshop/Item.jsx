@@ -1,9 +1,9 @@
-import { useContext } from 'react'
-import classes from './item.module.css'
-import { ApiContext } from '../../context'
+import React, { useContext } from 'react';
+import classes from './item.module.css';
+import { ApiContext } from '../../context';
 
 export const Item = ({ title, price, image, description, id }) => {
-  const {handleDeleteItem} = useContext(ApiContext);
+  const { handleDeleteItem } = useContext(ApiContext);
 
   return (
     <div className={classes.item}>
@@ -11,7 +11,7 @@ export const Item = ({ title, price, image, description, id }) => {
       <img className={classes.image} src={image} alt={title} />
       <p className={classes.description}>{description}</p>
       <span>{price}$</span>
-      <button onClick={()=>handleDeleteItem(id)}>Delete</button>
+      <button onClick={() => handleDeleteItem(id)}>Delete</button>
     </div>
-  )
-}
+  );
+};
